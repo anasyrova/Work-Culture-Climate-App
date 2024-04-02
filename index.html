@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    <style>
+        body{
+            background: #00284d;
+            color: #eee;
+            max-width: 960px;
+            margin: 20px auto;
+        }
+        p, h3, ul{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+            background: var(--background-secondary);
+            color: var(--text-color);
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li.fav{
+            background: hsl(250, 76%, 61%);
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            width: 100%;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        table thead th {
+            background: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+        table tr:nth-child(even) {
+            background-color: #2f2e2e;
+        }
+
+        table tr:nth-child(odd) {
+            background-color: #003b46;
+        }
+
+        table tr:hover {
+            background-color: #4d1053;
+        }
+        
+        .menu{
+            width: 100%;
+            text-align: center;
+        }
+        .center{
+            text-align: center;
+        }
+
+        button{
+            padding: 20px 40px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        button.selected{
+            background: hsl(250, 76%, 61%);
+        }
+
+      </style>
+</head>
+<body>
+    <h1 class="center"> Work Culture Climate </h1>
+
+    <div id="app"></div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
